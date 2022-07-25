@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-first-app-name
+  labels:
+    app: first-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: first-app
+  template:
+    metadata:
+      labels:
+        app: first-app
+    spec:
+      containers:
+        - name: first-app
+          image: ~/usr/src/app
+          ports:
+            - containerPort: 1000

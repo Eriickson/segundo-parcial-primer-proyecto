@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-const port = 8080;
+const port = 1000;
 
 let arr = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987];
 const valueToSearch = 13;
